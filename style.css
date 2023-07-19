@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  }
+  
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+  
+.puzzle-container {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+  
+.word-list {
+  margin-right: 40px;
+}
+  
+ul {
+  list-style: none;
+  padding: 0;
+}
+  
+li {
+  margin: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(15, 30px); 
+  gap: 2px;
+  background-color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.found-word {
+  background-color: green;
+  color: white;
+}
